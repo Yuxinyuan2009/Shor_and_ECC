@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shor-and-ecc"
+version = "0.0.0"
+description = "Simulating Shor's algorithm to break Elliptic Curve Cryptography"
+requires-python = "==3.12"
+dependencies = [
+    "tensorcircuit>=0.11.0",
+    "numpy>=1.26.4",
+    "sympy>=1.14.0",
+    "tqdm>=4.67.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=9.0.3",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["*"]
+
+[tool.pytest.ini_options]
+testpaths = ["test"]
+pythonpath = ["src"]
