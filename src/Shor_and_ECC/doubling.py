@@ -1,5 +1,5 @@
 import tensorcircuit as tc
-from mod_add import *
+from Shor_and_ECC.mod_add import *
 
 @ block
 def doubling(x: list, z: list) -> tc.Circuit:

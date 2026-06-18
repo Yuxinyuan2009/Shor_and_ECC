@@ -1,5 +1,5 @@
 import tensorcircuit as tc
-from add_const import *
+from Shor_and_ECC.add_const import *
 
 @ block
 def mod_add_const(x: list, z: list, t: int) -> tc.Circuit:

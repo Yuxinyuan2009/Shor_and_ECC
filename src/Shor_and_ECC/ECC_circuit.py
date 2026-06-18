@@ -1,7 +1,7 @@
 import time
 import tensorcircuit as tc
 import numpy as np
-from ECC_base import *
+from Shor_and_ECC.ECC_base import *
 import json
 
 # Start timing

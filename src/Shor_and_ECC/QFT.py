@@ -1,6 +1,6 @@
 import tensorcircuit as tc
 import numpy as np
-from base import *
+from Shor_and_ECC.base import *
 
 @ block
 def QFT(qubits) -> tc.Circuit:

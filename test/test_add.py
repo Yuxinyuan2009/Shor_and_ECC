@@ -3,9 +3,9 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
 
 import tensorcircuit as tc
 import numpy as np
-from base import set_state, out
-from QFT import QFT
-from add import add, cadd
+from Shor_and_ECC.base import set_state, out
+from Shor_and_ECC.QFT import QFT
+from Shor_and_ECC.add import add, cadd
 
 
 def test_add():

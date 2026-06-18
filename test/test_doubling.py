@@ -3,10 +3,10 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
 
 import tensorcircuit as tc
 import numpy as np
-from base import set_state, out
-from mod_add import mod_add, cmod_add
-from add_const import add_const, cadd_const, ccadd_const
-from doubling import doubling
+from Shor_and_ECC.base import set_state, out
+from Shor_and_ECC.mod_add import mod_add, cmod_add
+from Shor_and_ECC.add_const import add_const, cadd_const, ccadd_const
+from Shor_and_ECC.doubling import doubling
 
 
 def test_doubling():
