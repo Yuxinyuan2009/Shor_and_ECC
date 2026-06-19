@@ -1,7 +1,7 @@
 import tensorcircuit as tc
 import numpy as np
-from Shor_and_ECC.QFT import *          # Provides QFT (Quantum Fourier Transform)
-from Shor_and_ECC.base import *        # Provides set_state, out, ccphase (base utilities)
+from shor_ecc.QFT import *          # Provides QFT (Quantum Fourier Transform)
+from shor_ecc.base import *        # Provides set_state, out, ccphase (base utilities)
 
 @ block
 def add(x: list, y: list) -> tc.Circuit:

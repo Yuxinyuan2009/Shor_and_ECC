@@ -1,6 +1,6 @@
 import tensorcircuit as tc
-from Shor_and_ECC.mod_mul import *
-from Shor_and_ECC.negation import *
+from shor_ecc.mod_mul import *
+from shor_ecc.negation import *
 
 def classical_ECC_add(x1: int, y1: int, x2: int, y2: int, a: int) -> tuple[int, int]:
     '''

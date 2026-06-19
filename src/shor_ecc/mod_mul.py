@@ -1,7 +1,7 @@
 import tensorcircuit as tc
-from Shor_and_ECC.mod_add import *
-from Shor_and_ECC.doubling import *
-from Shor_and_ECC.mod_add_const import *
+from shor_ecc.mod_add import *
+from shor_ecc.doubling import *
+from shor_ecc.mod_add_const import *
 from tqdm import tqdm
 
 @ block

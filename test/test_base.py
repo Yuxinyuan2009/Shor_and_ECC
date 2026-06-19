@@ -3,7 +3,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
 
 import tensorcircuit as tc
 import numpy as np
-from Shor_and_ECC.base import set_state, out
+from shor_ecc.base import set_state, out
 
 
 def test_set_state():

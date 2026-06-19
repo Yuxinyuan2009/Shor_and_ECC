@@ -1,4 +1,4 @@
-from Shor_and_ECC.ECC_base import *
+from shor_ecc.ECC_base import *
 import json
 import sympy
 

@@ -1,5 +1,5 @@
 import tensorcircuit as tc
-from Shor_and_ECC.mod_add import *
+from shor_ecc.mod_add import *
 
 @ block
 def negation(x: list, z: list) -> tc.Circuit:

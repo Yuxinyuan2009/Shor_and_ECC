@@ -1,6 +1,6 @@
 import tensorcircuit as tc
 import numpy as np
-from Shor_and_ECC.add import *       # Provides QFT and ccphase
+from shor_ecc.add import *       # Provides QFT and ccphase
 
 @ block
 def add_const(x: list, t: int) -> tc.Circuit:

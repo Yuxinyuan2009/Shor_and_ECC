@@ -3,11 +3,11 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
 
 import tensorcircuit as tc
 import numpy as np
-from Shor_and_ECC.base import set_state, out, ccphase
-from Shor_and_ECC.QFT import QFT
-from Shor_and_ECC.add import add
-from Shor_and_ECC.add_const import add_const, cadd_const, ccadd_const
-from Shor_and_ECC.mod_add_const import mod_add_const, cmod_add_const, ccmod_add_const
+from shor_ecc.base import set_state, out, ccphase
+from shor_ecc.QFT import QFT
+from shor_ecc.add import add
+from shor_ecc.add_const import add_const, cadd_const, ccadd_const
+from shor_ecc.mod_add_const import mod_add_const, cmod_add_const, ccmod_add_const
 
 
 def test_mod_add_const():
