@@ -60,6 +60,7 @@ pip install -e ".[dev]"
 Run the full Shor's algorithm simulation:
 
 ```bash
+export PYTHONPATH="$PWD/src"
 python -m shor_ecc.ECC_circuit
 ```
 
@@ -68,6 +69,7 @@ This outputs probability amplitudes to `assets/output.json` and prints runtime (
 Run post-processing to recover the private key:
 
 ```bash
+export PYTHONPATH="$PWD/src"
 python -m shor_ecc.ECC_post_measurement
 ```
 
