@@ -1,3 +1,5 @@
+import sys, os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 from shor_ecc.ECC_base import *
 import json
 import sympy
@@ -26,6 +28,8 @@ def order(x: int, y: int, a: int) -> int:
         s, t = classical_ECC_add(x, y, s, t, a)
         if (s, t) == (0, 0):
             return i + 1
+        
+    return 0
 
 # print(order(2, 2, 0))
 

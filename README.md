@@ -16,18 +16,20 @@ This project demonstrates how Shor's algorithm can break ECC by solving the ECDL
 
 ```
 src/
-├── base.py                  # Core utilities: set_state, out, ccphase, block decorator
-├── QFT.py                   # Quantum Fourier Transform
-├── add.py                   # Quantum adder: |x>|y> -> |x>|x+y>
-├── add_const.py             # Addition of classical constant
-├── mod_add.py               # Modular addition (mod 7)
-├── mod_add_const.py         # Modular addition of constant (mod 7)
-├── mod_mul.py               # Modular multiplication and squaring (mod 7)
-├── doubling.py              # Doubling: |x> -> |2x mod 7>
-├── negation.py              # Modular negation: |x> -> |-x mod 7>
-├── ECC_base.py              # Elliptic curve point addition circuits
-├── ECC_circuit.py           # Main Shor's algorithm circuit (22 qubits, ~110k gates)
-└── ECC_post_measurement.py  # Post-processing and private key recovery
+└── shor_ecc/
+    ├── __init__.py              # Package init
+    ├── base.py                  # Core utilities: set_state, out, ccphase, block decorator
+    ├── QFT.py                   # Quantum Fourier Transform
+    ├── add.py                   # Quantum adder: |x>|y> -> |x>|x+y>
+    ├── add_const.py             # Addition of classical constant
+    ├── mod_add.py               # Modular addition (mod 7)
+    ├── mod_add_const.py         # Modular addition of constant (mod 7)
+    ├── mod_mul.py               # Modular multiplication and squaring (mod 7)
+    ├── doubling.py              # Doubling: |x> -> |2x mod 7>
+    ├── negation.py              # Modular negation: |x> -> |-x mod 7>
+    ├── ECC_base.py              # Elliptic curve point addition circuits
+    ├── ECC_circuit.py           # Main Shor's algorithm circuit (22 qubits, ~110k gates)
+    └── ECC_post_measurement.py  # Post-processing and private key recovery
 
 test/                        # pytest test suite for all modules
 assets/                      # Simulation output and visualizations
@@ -58,7 +60,7 @@ pip install -e ".[dev]"
 Run the full Shor's algorithm simulation:
 
 ```bash
-python src/ECC_circuit.py
+python -m shor_ecc.ECC_circuit
 ```
 
 This outputs probability amplitudes to `assets/output.json` and prints runtime (approx. 197 seconds for 10 control qubits).
@@ -66,7 +68,7 @@ This outputs probability amplitudes to `assets/output.json` and prints runtime (
 Run post-processing to recover the private key:
 
 ```bash
-python src/ECC_post_measurement.py
+python -m shor_ecc.ECC_post_measurement
 ```
 
 Run tests:

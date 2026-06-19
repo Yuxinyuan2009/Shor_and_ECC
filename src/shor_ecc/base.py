@@ -1,5 +1,6 @@
 import tensorcircuit as tc
 import numpy as np
+from typing import Union
 
 def block(func):
 	def wrapper(*args, **kwargs):
@@ -83,7 +84,7 @@ def cset_state(p: int, n: int, qubits: list) -> tc.Circuit:
     return c
 
 
-def out(state: np.ndarray, a=None, b=None) -> tuple[int, list]:
+def out(state: np.ndarray, a=None, b=None) -> Union[int, list[int]]:
     """
     Extract sub-bitstring or non-zero amplitude indices from a quantum state.
 

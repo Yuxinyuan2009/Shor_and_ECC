@@ -1,3 +1,5 @@
+import sys, os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 import tensorcircuit as tc
 import numpy as np
 from shor_ecc.QFT import *          # Provides QFT (Quantum Fourier Transform)
